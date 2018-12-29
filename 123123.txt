@@ -30,3 +30,4 @@ comment on column BUSI_EXP_LOG.modifier_id
 ';
 alter table BUSI_EXP_LOG
 add constraint PK_BUSI_EXP_LOG primary key (ID);
+hahahhahahahahah
