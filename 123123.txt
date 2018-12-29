@@ -1,0 +1,32 @@
+create table BUSI_EXP_LOG
+(
+  id                  NUMBER(10),
+  login_id            NUMBER(10),
+  lawyer_id           NUMBER(10),
+  busi_exp_one_before VARCHAR2(100),
+  busi_exp_one_after  VARCHAR2(100),
+  update_time         DATE,
+  modifier_id         NUMBER(10)
+);
+-- Add comments to the table 
+comment on table BUSI_EXP_LOG
+  is '业务特长日志表';
+comment on column BUSI_EXP_LOG.id
+  is '日志ID';
+comment on column BUSI_EXP_LOG.login_id
+  is '被修改者的登录ID';
+comment on column BUSI_EXP_LOG.lawyer_id
+  is '被修改者的律师id
+';
+comment on column BUSI_EXP_LOG.busi_exp_one_before
+  is '修改前业务特长1';
+comment on column BUSI_EXP_LOG.busi_exp_one_after
+  is '修改后业务特长1';
+comment on column BUSI_EXP_LOG.update_time
+  is '修改时间
+';
+comment on column BUSI_EXP_LOG.modifier_id
+  is '修改人id
+';
+alter table BUSI_EXP_LOG
+add constraint PK_BUSI_EXP_LOG primary key (ID);
